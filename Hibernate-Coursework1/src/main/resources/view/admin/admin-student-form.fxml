@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootNode" prefHeight="616.0" prefWidth="624.0" style="-fx-background-radius: 10;" stylesheets="@../../assets/styles/userManagement.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.admin.AdminStudentFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03424a" height="56.0" stroke="#03424a" strokeType="INSIDE" width="624.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#044c54" height="87.0" layoutX="276.0" layoutY="55.0" stroke="#035e68" strokeType="INSIDE" width="348.0" />
+      <Text layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Manage Form">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblStudent" layoutY="142.0" prefHeight="467.0" prefWidth="624.0">
+        <columns>
+          <TableColumn fx:id="clmStudentId" prefWidth="69.9744758605957" text="Student ID" />
+          <TableColumn fx:id="clmName" prefWidth="125.02552795410156" text="Name" />
+            <TableColumn fx:id="clmAddress" prefWidth="90.06118774414062" text="Address" />
+            <TableColumn fx:id="clmEmail" prefWidth="150.43881225585938" text="Email" />
+            <TableColumn fx:id="clmTelephone" prefWidth="100.41326904296875" text="Telephone" />
+            <TableColumn fx:id="clmDOB" prefWidth="79.3876953125" text="DOB" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtIds" layoutX="284.0" layoutY="65.0" prefHeight="26.0" prefWidth="334.0" promptText="Enter Student ID" />
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="465.0" layoutY="97.0" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="71.0" ripplerFill="#0080ff" stylesheets="@../../assets/styles/userManagement.css" text="Update" />
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="546.0" layoutY="97.0" onAction="#btnDeleteOnAction" prefHeight="26.0" prefWidth="71.0" text="Delete" />
+      <ImageView fitHeight="78.0" fitWidth="85.0" layoutX="5.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/image/download.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

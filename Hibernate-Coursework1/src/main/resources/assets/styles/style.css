@@ -1,0 +1,101 @@
+#btnAdd {
+    -fx-background-color: #1a75ff; /* Default color */
+    -fx-text-fill: white;          /* Default text color */
+}
+
+#btnAdd:hover {
+    -fx-background-color: #0052cc;    /* Hover background color */
+    -fx-text-fill: white;         /* Hover text color */
+    -fx-border-width: 2px;          /* Optional border width */
+    -fx-font-weight: bold;
+}
+
+#btnClear{
+    -fx-background-color: #ff4d4d;
+    -fx-text-fill: white;
+}
+#btnClear:hover{
+    -fx-background-color: #cc0000;
+    -fx-text-fill: white;
+    -fx-border-width: 2px;
+    -fx-font-weight: bold;
+}
+
+#btnRegister{
+    -fx-background-color: #1fe0ad;
+    -fx-text-fill: white;
+}
+#btnRegister:hover{
+    -fx-background-color: #18b48a;
+    -fx-text-fill: white;
+    -fx-border-width: 2px;
+    -fx-font-weight: bold;
+}
+/* Table styling */
+#tblRegistationDetails {
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-color: #f9f9f9;
+    -fx-table-cell-border-color: #e0e0e0;
+}
+
+/* Header styling */
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #cce6ff;
+    -fx-text-fill: white;
+}
+
+/*.table-view .column-header .label {*/
+/*    -fx-font-size: 14px;*/
+/*}*/
+
+/*!* Row styling *!*/
+/*.table-row-cell {*/
+/*    -fx-background-color: white;*/
+/*    -fx-border-color: transparent;*/
+/*    -fx-border-width: 0px;*/
+/*}*/
+
+/*.table-row-cell:odd {*/
+/*    -fx-background-color: #f2f2f2;*/
+/*}*/
+
+/*.table-row-cell:selected {*/
+/*    -fx-background-color: #D1E7DD;*/
+/*    -fx-text-fill: black;*/
+/*}*/
+
+/*!* Hover effect for rows *!*/
+/*.table-row-cell:hover {*/
+/*    -fx-background-color: #E0F7FA;*/
+/*    -fx-cursor: hand;*/
+/*}*/
+
+/*!* Column-specific styling *!*/
+/*#clmProgramId,*/
+/*#clmName,*/
+/*#clmFee,*/
+/*#clmAdvancedAmmount,*/
+/*#clmRamainingAmount,*/
+/*#clmAction {*/
+/*    -fx-alignment: CENTER_LEFT;*/
+/*    -fx-padding: 8px;*/
+/*    -fx-font-size: 13px;*/
+/*    -fx-text-fill: #333333;*/
+/*}*/
+
+/*!* Action column styling *!*/
+/*#clmAction .button {*/
+/*    -fx-background-color: #4CAF50;*/
+/*    -fx-text-fill: white;*/
+/*    -fx-font-weight: bold;*/
+/*    -fx-border-radius: 3px;*/
+/*    -fx-padding: 4px 8px;*/
+/*}*/
+
+/*#clmAction .button:hover {*/
+/*    -fx-background-color: #45A049;*/
+/*}*/
+

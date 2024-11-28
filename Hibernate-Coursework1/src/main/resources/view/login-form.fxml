@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootNode" prefHeight="401.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.LoginFormController">
+   <children>
+      <AnchorPane fx:id="node" layoutX="35.0" layoutY="40.0" prefHeight="322.0" prefWidth="271.0" style="-fx-background-color: #dcdde1; -fx-background-radius: 10;">
+         <children>
+            <JFXComboBox fx:id="cmbAccountType" focusColor="#2e86de" layoutX="13.0" layoutY="138.0" prefHeight="26.0" prefWidth="248.0" promptText="Account type" unFocusColor="#54a0ff" />
+         </children></AnchorPane>
+      <ImageView fitHeight="401.0" fitWidth="307.0" layoutX="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/image/img.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="45.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in to your account" wrappingWidth="252.0">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your Username and Password" wrappingWidth="230.18853759765625">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtuserName" layoutX="45.0" layoutY="221.0" prefHeight="26.0" prefWidth="252.0" promptText="Username">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtpassword" layoutX="45.0" layoutY="262.0" prefHeight="26.0" prefWidth="252.0" promptText="Password">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </PasswordField>
+      <JFXButton fx:id="btnLogin" layoutX="107.0" layoutY="302.0" onAction="#btnLoginOnAction" prefHeight="25.0" prefWidth="122.0" style="-fx-background-color: #0984e3; -fx-border-radius: 7; -fx-cursor: hand;" text="Log in" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Text layoutX="63.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you don't have an Account ?">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Text>
+      <Hyperlink fx:id="hyperRegister" layoutX="223.0" layoutY="337.0" onAction="#hyperRegisterOnAction" text="Register now">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

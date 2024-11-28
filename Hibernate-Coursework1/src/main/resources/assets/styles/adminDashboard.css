@@ -1,0 +1,70 @@
+#btnStudentForm{
+    -fx-background-color: #d6e9f5;
+    -fx-text-fill: black;
+}
+#btnStudentForm:hover{
+    -fx-background-color: #80b9e5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-width: 50px;
+}
+
+#btnCourseFrom{
+    -fx-background-color: #d6e9f5;
+    -fx-text-fill: black;
+}
+#btnCourseFrom:hover{
+    -fx-background-color: #80b9e5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#btnMangeDetalis{
+    -fx-background-color: #d6e9f5;
+    -fx-text-fill: black;
+}
+#btnMangeDetalis:hover{
+    -fx-background-color: #80b9e5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#btnUserManage{
+    -fx-background-color: #d6e9f5;
+    -fx-text-fill: black;
+}
+#btnUserManage:hover{
+    -fx-background-color: #80b9e5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#btnEnrollmentDetails{
+    -fx-background-color: #d6e9f5;
+    -fx-text-fill: black;
+}
+#btnEnrollmentDetails:hover{
+    -fx-background-color: #80b9e5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#btnLogOut{
+    -fx-background-color: #d6e9f5;
+    -fx-text-fill: black;
+}
+#btnLogOut:hover{
+    -fx-background-color: #ff1a1a;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+#btnDashbord{
+    -fx-background-color: #d6e9f5;
+    -fx-text-fill: black;
+}
+#btnDashbord:hover{
+    -fx-background-color: #47d147;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

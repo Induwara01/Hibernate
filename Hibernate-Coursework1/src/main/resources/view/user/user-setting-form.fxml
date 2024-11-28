@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootNode" prefHeight="616.0" prefWidth="635.0" stylesheets="@../../assets/styles/userManagement.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.user.UserSettingFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03424a" height="73.0" layoutY="-6.0" stroke="#03424a" strokeType="INSIDE" width="639.0" />
+      <ImageView fitHeight="533.0" fitWidth="622.0" layoutX="60.0" layoutY="50.0" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/image/setting.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="61.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings">
+         <font>
+            <Font name="Times New Roman Bold" size="48.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="65.0" fitWidth="134.0" layoutX="-3.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/animate/output-onlinegiftools.gif" />
+         </image>
+      </ImageView>
+      <Text layoutX="14.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Email:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtLoggedEmail" layoutX="14.0" layoutY="95.0" prefHeight="28.0" prefWidth="300.0" />
+      <Line endY="339.0" layoutX="320.0" layoutY="212.0" startY="-29.0" />
+      <Text layoutX="20.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Password :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Password :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCurrentPassword" layoutX="19.0" layoutY="279.0" opacity="0.8" prefHeight="28.0" prefWidth="280.0" />
+      <TextField fx:id="txtNewPassword" layoutX="20.0" layoutY="340.0" opacity="0.8" prefHeight="28.0" prefWidth="280.0" />
+      <TextField fx:id="txtReEnterPassword" layoutX="21.0" layoutY="403.0" opacity="0.8" prefHeight="28.0" prefWidth="280.0" promptText="Re-enter new password" />
+      <Text layoutX="15.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="216.0" layoutY="465.0" onAction="#btnSaveOnAction" prefHeight="30.0" prefWidth="85.0" text="Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="339.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="340.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="340.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Id:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUserName" layoutX="338.0" layoutY="279.0" opacity="0.8" prefHeight="28.0" prefWidth="280.0" />
+      <TextField fx:id="txtTelephone" layoutX="339.0" layoutY="340.0" opacity="0.8" prefHeight="28.0" prefWidth="280.0" />
+      <Text layoutX="334.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Details">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="532.0" layoutY="465.0" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="85.0" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblUserId" layoutX="340.0" layoutY="403.0" opacity="0.8" prefHeight="28.0" prefWidth="280.0" />
+   </children>
+</AnchorPane>

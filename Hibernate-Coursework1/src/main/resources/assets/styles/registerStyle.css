@@ -1,0 +1,35 @@
+/* Style for the TextField */
+.text-field {
+    -fx-background-color: #bfbfbf;
+    -fx-prompt-text-fill: white;
+    /*-fx-background-radius: 8px;*/
+    /*-fx-padding: 8px;*/
+    /*-fx-font-size: 14px;*/
+    -fx-text-fill: #333333;
+    /*-fx-border-color: #6a1b9a;*/
+    /*-fx-border-radius: 8px;*/
+    /*-fx-border-width: 1px;*/
+}
+
+/* Style for placeholder text */
+.text-field:focused {
+    -fx-background-color: #e8eaf6;
+    -fx-border-color: #208000;
+    -fx-border-radius: 5px;
+}
+
+/* Style for text when hovered */
+.text-field:hover {
+    -fx-background-color: #d9f2d9;
+    /*-fx-border-color: #7b1fa2;*/
+    -fx-prompt-text-fill: black;
+}
+
+#btnRegistre{
+    -fx-background-color:  #2ecc71;
+}
+#btnRegistre:hover{
+    -fx-background-color: #219150;
+}
+
+#cmbAccountType{}

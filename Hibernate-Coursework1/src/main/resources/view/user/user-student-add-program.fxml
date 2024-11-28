@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootNode" prefHeight="616.0" prefWidth="635.0" style="-fx-background-radius: 10;" stylesheets="@../../assets/styles/userManagement.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.user.StudentAddProgramFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03424a" height="62.0" layoutY="-1.0" stroke="#03424a" strokeType="INSIDE" width="639.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cccccc" height="215.0" layoutY="401.0" stroke="#cccccc" strokeType="INSIDE" width="635.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccebff" height="43.0" layoutX="19.0" layoutY="99.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="214.0" layoutX="19.0" layoutY="126.0" stroke="BLACK" strokeType="INSIDE" width="290.0" />
+      <Text layoutX="66.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Register For Program">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="cmbStudentId" layoutX="27.0" layoutY="134.0" onAction="#cmbStudentIdOnAction" prefHeight="26.0" prefWidth="273.0" promptText="Student ID">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXComboBox>
+      <Label fx:id="lblStudentName" layoutX="27.0" layoutY="193.0" prefHeight="25.0" prefWidth="273.0" style="-fx-background-color: #e6f5ff;" textAlignment="CENTER" />
+      <Label fx:id="lblEmail" layoutX="27.0" layoutY="246.0" prefHeight="25.0" prefWidth="273.0" style="-fx-background-color: #e6f5ff;" />
+      <Label fx:id="lblTelephone" layoutX="27.0" layoutY="301.0" prefHeight="25.0" prefWidth="273.0" style="-fx-background-color: #e6f5ff;" />
+      <Text layoutX="27.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name :" />
+      <Text layoutX="27.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" />
+      <Text layoutX="27.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone :" />
+      <Text layoutX="24.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Details">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ccebff" height="43.0" layoutX="324.0" layoutY="99.0" stroke="BLACK" strokeType="INSIDE" width="108.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="214.0" layoutX="324.0" layoutY="126.0" stroke="BLACK" strokeType="INSIDE" width="290.0" />
+      <JFXComboBox fx:id="cmbProgramID" layoutX="332.0" layoutY="134.0" onAction="#cmbProgrmIdOnAction" prefHeight="26.0" prefWidth="273.0" promptText="Program ID">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXComboBox>
+      <Label fx:id="lblProgramName" layoutX="332.0" layoutY="193.0" prefHeight="25.0" prefWidth="273.0" style="-fx-background-color: #e6f5ff;" />
+      <Label fx:id="lblDuration" layoutX="332.0" layoutY="246.0" prefHeight="25.0" prefWidth="273.0" style="-fx-background-color: #e6f5ff;" />
+      <Label fx:id="lblFee" layoutX="332.0" layoutY="301.0" prefHeight="25.0" prefWidth="273.0" style="-fx-background-color: #e6f5ff;" />
+      <Text layoutX="332.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Name :" />
+      <Text layoutX="332.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration :" />
+      <Text layoutX="332.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fee (LKR) :" />
+      <Text layoutX="327.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Details" wrappingWidth="108.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="12.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/icons/register.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="65.0" text="Registation ID :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRegisterId" layoutX="158.0" layoutY="66.0" text="RP000-001" textFill="#00004d">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="274.0" layoutY="66.0" text="Date :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="328.0" layoutY="68.0" text="2024 - 11 -27" textFill="#00004d">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblRegistationDetails" layoutX="20.0" layoutY="412.0" prefHeight="150.0" prefWidth="594.0" stylesheets="@../../assets/styles/style.css">
+        <columns>
+          <TableColumn fx:id="clmRegisterID" prefWidth="91.0" text="Register ID" />
+          <TableColumn id="name" fx:id="clmStudentID" prefWidth="105.0" text="Student ID" />
+            <TableColumn fx:id="clmProgramID" prefWidth="121.0" text="Program ID" />
+            <TableColumn fx:id="clmAdvancedAmount" prefWidth="159.0" text="Advanced Amount(LKR)" />
+            <TableColumn fx:id="clmDate" prefWidth="116.0" text="Date" />
+        </columns>
+      </TableView>
+      <Label layoutX="458.0" layoutY="66.0" text="Time :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="508.0" layoutY="67.0" text="00 :  00 : 00" textFill="#00004d">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSave" layoutX="356.0" layoutY="363.0" onAction="#btnSaveOnAction" prefHeight="32.0" prefWidth="62.0" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="568.0" layoutY="363.0" onAction="#btnClearOnAction" prefHeight="32.0" prefWidth="62.0" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="427.0" layoutY="362.0" onAction="#btnUpdateOnAction" prefHeight="32.0" prefWidth="62.0" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" buttonType="RAISED" layoutX="499.0" layoutY="363.0" onAction="#btnDeleteOnAction" prefHeight="32.0" prefWidth="62.0" text="Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnMakePayment" buttonType="RAISED" layoutX="489.0" layoutY="572.0" onAction="#btnMakePymentOnAction" prefHeight="32.0" prefWidth="124.0" text="Make Payment" />
+      <TextField fx:id="txtAdvancedAmount" layoutX="19.0" layoutY="364.0" prefHeight="28.0" prefWidth="319.0" />
+      <Text layoutX="21.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Advanced Amount (LKR) :" />
+   </children>
+</AnchorPane>

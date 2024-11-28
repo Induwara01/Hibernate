@@ -1,0 +1,50 @@
+#btnStudentForm{
+    -fx-background-color: #d5e8f6;
+}
+#btnStudentForm:hover{
+    -fx-background-color: #f8793a;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-width: 5px;
+}
+
+
+#btnCourseFrom{
+    -fx-background-color:#d5e8f6;
+}
+#btnCourseFrom:hover{
+    -fx-background-color: #f8793a;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-width: 5px;
+}
+
+#btnRegisterStudent{
+    -fx-background-color:  #d5e8f6;
+}
+#btnRegisterStudent:hover{
+    -fx-background-color:  #f8793a;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-width: 5px;
+}
+
+#btnDashbord{
+    -fx-background-color: #d5e8f6;
+}
+#btnDashbord:hover{
+    -fx-background-color:  #2eb82e;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-width: 5px;
+}
+
+#btnLogOut{
+    -fx-background-color: #d5e8f6;
+}
+#btnLogOut:hover{
+    -fx-background-color:  #ff1a1a;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-width: 5px;
+}

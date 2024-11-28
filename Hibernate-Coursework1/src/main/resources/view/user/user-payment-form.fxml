@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootNode" prefHeight="616.0" prefWidth="635.0" stylesheets="@../../assets/styles/userManagement.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.user.UserPaymentFromController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03424a" height="50.0" layoutY="-2.0" stroke="#03424a" strokeType="INSIDE" width="635.0" />
+      <Text layoutX="64.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Payment Form ">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/icons/payment.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPaymentId" layoutX="12.0" layoutY="110.0" prefHeight="30.0" prefWidth="300.0" stylesheets="@../../assets/styles/userManagement.css" />
+      <TextField fx:id="txtAdvancedAmount" layoutX="12.0" layoutY="171.0" prefHeight="30.0" prefWidth="300.0" stylesheets="@../../assets/styles/userManagement.css" />
+      <TextField fx:id="txtFullCourseFee" layoutX="322.0" layoutY="172.0" prefHeight="28.0" prefWidth="300.0" stylesheets="@../../assets/styles/userManagement.css" />
+      <TextField fx:id="txtRemainingAmount" layoutX="13.0" layoutY="230.0" prefHeight="30.0" prefWidth="300.0" stylesheets="@../../assets/styles/userManagement.css" />
+      <TextField fx:id="txtPaymentAmount" layoutX="322.0" layoutY="231.0" onAction="#txtPaymentOnAction" prefHeight="28.0" prefWidth="300.0" stylesheets="@../../assets/styles/userManagement.css" />
+      <Text layoutX="13.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment ID :" />
+      <Text layoutX="322.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register ID:" />
+      <JFXComboBox fx:id="cmbRegisterId" layoutX="320.0" layoutY="108.0" onAction="#cmbRegisterIdOnAcion" prefHeight="28.0" prefWidth="300.0" />
+      <Text layoutX="14.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Advanced Amount(LKR):)" />
+      <Text layoutX="323.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Course Fee(LKR):" />
+      <Text layoutX="14.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remaining Amount (LKR):" />
+      <Text layoutX="323.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pay Amount (LKR):" />
+      <TableView fx:id="tblPayment" layoutX="14.0" layoutY="328.0" prefHeight="232.0" prefWidth="607.0">
+        <columns>
+          <TableColumn fx:id="clmPaymentId" prefWidth="69.0" text="Payment ID" />
+          <TableColumn fx:id="clmRegisterId" prefWidth="71.0" text="Register ID" />
+            <TableColumn fx:id="clmFullCourseFee" prefWidth="96.0" text="Full Course Fee" />
+            <TableColumn fx:id="clmAdvancedAmount" prefWidth="110.0" text="Advanced Amount" />
+            <TableColumn fx:id="clmRemainingAmount" prefWidth="83.0" text="Remaining" />
+            <TableColumn fx:id="clmNewPayment" prefWidth="98.0" text="New  payment" />
+            <TableColumn fx:id="clmBalance" prefWidth="79.0" text="Balance" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSave" layoutX="362.0" layoutY="574.0" mnemonicParsing="false" onAction="#btnPayOnAction" prefHeight="28.0" prefWidth="79.0" text="Pay" />
+      <Button fx:id="btnUpdate" layoutX="452.0" layoutY="574.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="28.0" prefWidth="79.0" text="Update" />
+      <Button fx:id="btnClear" layoutX="541.0" layoutY="574.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="28.0" prefWidth="79.0" text="Clear" />
+      <Text layoutX="14.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balnce(LKR) :" />
+      <Label fx:id="lblBalance" layoutX="13.0" layoutY="287.0" prefHeight="28.0" prefWidth="607.0" style="-fx-background-color: #e6ffee;" />
+   </children>
+</AnchorPane>

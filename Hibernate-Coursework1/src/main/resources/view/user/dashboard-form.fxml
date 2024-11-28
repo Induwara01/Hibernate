@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootNode" prefHeight="623.0" prefWidth="863.0" style="-fx-background-color: #1f7a1f;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.user.DashboardForm">
+   <children>
+      <AnchorPane fx:id="root" layoutX="4.0" layoutY="4.0" prefHeight="615.0" prefWidth="216.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03424a" height="624.0" layoutX="-9.0" layoutY="-4.0" stroke="#03424a" strokeType="INSIDE" width="232.0" />
+            <JFXButton fx:id="btnCourseFrom" buttonType="RAISED" layoutX="16.0" layoutY="104.0" onAction="#btnCourseFormOnAction" prefHeight="42.0" prefWidth="171.0" style="-fx-background-radius: 5; -fx-border-radius: 10;" stylesheets="@../../assets/styles/userDashboard.css" text="   View Program  ">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons/course.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnDashbord" buttonType="RAISED" layoutX="18.0" layoutY="535.0" onAction="#btnDashboardFormOnActin" prefHeight="32.0" prefWidth="93.0" stylesheets="@../../assets/styles/userDashboard.css" text="Dashboard">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRegisterStudent" buttonType="RAISED" layoutX="16.0" layoutY="177.0" onAction="#btnRegisterStudentOnAction" prefHeight="42.0" prefWidth="171.0" style="-fx-background-radius: 5;" stylesheets="@../../assets/styles/userDashboard.css" text="Register Student">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons/dReg.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="btnStudentForm" buttonType="RAISED" layoutX="16.0" layoutY="31.0" onAction="#btnStudentFormnAction" prefHeight="42.0" prefWidth="171.0" style="-fx-background-radius: 5;" stylesheets="@../../assets/styles/userDashboard.css" text="Student Manage">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/icons/student.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnLogOut" buttonType="RAISED" layoutX="114.0" layoutY="536.0" onAction="#btnLogOutOnAction" prefHeight="32.0" prefWidth="83.0" stylesheets="@../../assets/styles/userDashboard.css" text="Log Out">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="iconSettings" fitHeight="23.0" fitWidth="25.0" layoutX="6.0" layoutY="586.0" onMouseClicked="#iconSettionOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/icons/setting.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="node" layoutX="224.0" layoutY="-1.0" prefHeight="624.0" prefWidth="635.0" style="-fx-background-color: #fbfbfb; -fx-background-radius: 10;">
+         <children>
+            <ImageView fitHeight="274.0" fitWidth="417.0" layoutX="27.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/image/download%20(4).jpeg" />
+               </image>
+            </ImageView>
+            <Text layoutX="17.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome..." wrappingWidth="346.5574645996094">
+               <font>
+                  <Font name="Times New Roman Bold" size="68.0" />
+               </font>
+            </Text>
+            <Label layoutX="54.0" layoutY="101.0" opacity="0.11" prefHeight="156.0" prefWidth="245.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 20; -fx-border-color: #130f40; -fx-border-radius: 20;" />
+            <Text fill="#0c2461" layoutX="80.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Count In the System :" wrappingWidth="152.00347900390625">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Label layoutX="338.0" layoutY="101.0" opacity="0.11" prefHeight="156.0" prefWidth="245.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 20; -fx-border-color: #130f40; -fx-border-radius: 20;" />
+            <Text fill="#0c2461" layoutX="364.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses Count In the System :" wrappingWidth="152.00347900390625">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblStudent" layoutX="176.0" layoutY="186.0" prefHeight="42.0" prefWidth="71.0" text="10">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCourse" layoutX="460.0" layoutY="187.0" prefHeight="42.0" prefWidth="71.0" text="10">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="470.0" layoutY="14.0" prefHeight="23.0" prefWidth="150.0" text="Label">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="470.0" layoutY="46.0" prefHeight="23.0" prefWidth="150.0" text="Label">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="116.0" layoutY="-283.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   </children>
+</AnchorPane>

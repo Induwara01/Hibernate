@@ -1,0 +1,98 @@
+#btnUserSearch{
+    -fx-background-color: #1ccaa7;
+    -fx-text-fill: white;
+}
+#btnUserSearch:hover{
+    -fx-background-color: #16a085;
+}
+
+#btnRegister{
+    -fx-background-color: #59d98e;
+    -fx-text-fill: white;
+}
+#btnRegister:hover{
+    -fx-background-color: #2abb67;
+}
+
+#btnUpdate{
+    -fx-background-color: #f7db6e;
+    -fx-text-fill: white;
+}
+#btnUpdate:hover{
+    -fx-background-color: #d9b00d;
+}
+
+#btnDelete{
+    -fx-background-color: #ff4d4d;
+    -fx-text-fill: white;
+}
+#btnDelete:hover{
+    -fx-background-color: #e60000;
+}
+
+#btnClear{
+    -fx-background-color: #9494b8;
+    -fx-text-fill: white;
+}
+#btnClear:hover{
+    -fx-background-color: #5c5c8a;
+}
+/* Style for the TextField */
+.text-field {
+    -fx-background-color: #e6e6e6;
+    /*-fx-background-radius: 8px;*/
+    /*-fx-padding: 8px;*/
+    /*-fx-font-size: 14px;*/
+    -fx-text-fill: #333333;
+    /*-fx-border-color: #6a1b9a;*/
+    /*-fx-border-radius: 8px;*/
+    /*-fx-border-width: 1px;*/
+}
+
+/* Style for placeholder text */
+.text-field:focused {
+    -fx-background-color: #e8eaf6;
+    /*-fx-border-color: #4a148c;*/
+}
+
+/* Style for text when hovered */
+.text-field:hover {
+    -fx-background-color: #f3e5f5;
+    /*-fx-border-color: #7b1fa2;*/
+}
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #cce6ff;
+    -fx-text-fill: white;
+}
+
+#btnSave{
+    -fx-background-color: #59d98e;
+    -fx-text-fill: white;
+}
+#btnSave:hover{
+    -fx-background-color: #2abb67;
+}
+
+#btnMakePayment{
+    -fx-background-color: #57606f;
+    -fx-text-fill: white;
+}
+#btnMakePayment:hover{
+    -fx-background-color: #22252b;
+}
+
+#lblUserId{
+    -fx-background-color: #e6e6e6;
+}
+#lblUserId:hover{
+    --fx-background-color: #f3e5f5;
+}
+
+#btnSearch{
+    -fx-background-color: #59d98e;
+    -fx-text-fill: white;
+}
+#btnSearch:hover{
+    -fx-background-color: #2abb67;
+    -fx-font-weight: bold;
+}

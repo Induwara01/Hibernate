@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootNode" prefHeight="616.0" prefWidth="635.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.user.BackToDashbardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03424a" height="66.0" layoutY="-1.0" stroke="#03424a" strokeType="INSIDE" width="635.0" />
+      <Text layoutX="3.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome..." wrappingWidth="346.5574645996094">
+         <font>
+            <Font name="System Bold Italic" size="64.0" />
+         </font>
+      </Text>
+      <Label layoutX="44.0" layoutY="96.0" prefHeight="156.0" prefWidth="245.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 20; -fx-border-color: #130f40; -fx-border-radius: 20;" />
+      <Text fill="#0c2461" layoutX="70.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Count In the System :" wrappingWidth="152.00347900390625">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Label layoutX="328.0" layoutY="96.0" prefHeight="156.0" prefWidth="245.0" style="-fx-background-color: #f1f2f6; -fx-background-radius: 20; -fx-border-color: #130f40; -fx-border-radius: 20;" />
+      <Text fill="#0c2461" layoutX="354.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses Count In the System :" wrappingWidth="152.00347900390625">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblStudent" layoutX="166.0" layoutY="181.0" prefHeight="42.0" prefWidth="71.0" text="10">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCourse" layoutX="450.0" layoutY="182.0" prefHeight="42.0" prefWidth="71.0" text="10">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="460.0" layoutY="9.0" prefHeight="23.0" prefWidth="150.0" text="Label">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="460.0" layoutY="41.0" prefHeight="23.0" prefWidth="150.0" text="Label">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
